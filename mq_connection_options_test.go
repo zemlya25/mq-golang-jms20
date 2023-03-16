@@ -12,10 +12,10 @@ package main
 import (
 	"testing"
 
-	"github.com/ibm-messaging/mq-golang-jms20/jms20subset"
 	"github.com/ibm-messaging/mq-golang/v5/ibmmq"
+	"github.com/zemlya25/mq-golang-jms20/jms20subset"
+	"github.com/zemlya25/mq-golang-jms20/mqjms"
 
-	"github.com/ibm-messaging/mq-golang-jms20/mqjms"
 	"github.com/stretchr/testify/assert"
 )
 

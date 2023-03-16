@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ibm-messaging/mq-golang-jms20/jms20subset"
 	ibmmq "github.com/ibm-messaging/mq-golang/v5/ibmmq"
+	"github.com/zemlya25/mq-golang-jms20/jms20subset"
 )
 
 // ProducerImpl defines a struct that contains the necessary objects for

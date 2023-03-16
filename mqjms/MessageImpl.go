@@ -19,8 +19,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ibm-messaging/mq-golang-jms20/jms20subset"
 	ibmmq "github.com/ibm-messaging/mq-golang/v5/ibmmq"
+	"github.com/zemlya25/mq-golang-jms20/jms20subset"
 )
 
 const MessageImpl_PROPERTY_CONVERT_FAILED_REASON string = "MQJMS_E_BAD_TYPE"
@@ -436,7 +436,7 @@ func (msg *MessageImpl) setSpecialIntPropertyValue(name string, value int) (bool
 
 	case "JMSXGroupSeq":
 		err = errors.New("Not yet implemented")
-		//msg.mqmd.MsgSeqNumber = int32(value)
+		// msg.mqmd.MsgSeqNumber = int32(value)
 
 	default:
 		isSpecial = false

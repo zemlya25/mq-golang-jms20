@@ -15,7 +15,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/ibm-messaging/mq-golang-jms20/mqjms"
+	"github.com/zemlya25/mq-golang-jms20/mqjms"
 )
 
 func main() {

@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/ibm-messaging/mq-golang-jms20/jms20subset"
+	"github.com/zemlya25/mq-golang-jms20/jms20subset"
 )
 
 // QueueImpl encapsulates the provider-specific attributes necessary to

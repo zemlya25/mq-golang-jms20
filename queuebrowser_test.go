@@ -12,8 +12,8 @@ package main
 import (
 	"testing"
 
-	"github.com/ibm-messaging/mq-golang-jms20/mqjms"
 	"github.com/stretchr/testify/assert"
+	"github.com/zemlya25/mq-golang-jms20/mqjms"
 )
 
 /*

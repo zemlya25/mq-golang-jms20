@@ -15,9 +15,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ibm-messaging/mq-golang-jms20/jms20subset"
-	"github.com/ibm-messaging/mq-golang-jms20/mqjms"
 	"github.com/stretchr/testify/assert"
+	"github.com/zemlya25/mq-golang-jms20/jms20subset"
+	"github.com/zemlya25/mq-golang-jms20/mqjms"
 )
 
 /*
@@ -30,8 +30,8 @@ import (
 func DONT_RUNTestLeakOnEmptyGet(t *testing.T) {
 
 	// Loads CF parameters from connection_info.json and applicationApiKey.json in the Downloads directory
-	//cf, cfErr := mqjms.CreateConnectionFactoryFromDefaultJSONFiles()
-	//assert.Nil(t, cfErr)
+	// cf, cfErr := mqjms.CreateConnectionFactoryFromDefaultJSONFiles()
+	// assert.Nil(t, cfErr)
 
 	// Initialise the attributes of the CF in whatever way you like
 	cf := mqjms.ConnectionFactoryImpl{
@@ -89,8 +89,8 @@ func DONT_RUNTestLeakOnEmptyGet(t *testing.T) {
 func DONTRUN_TestLeakOnPutGet(t *testing.T) {
 
 	// Loads CF parameters from connection_info.json and applicationApiKey.json in the Downloads directory
-	//cf, cfErr := mqjms.CreateConnectionFactoryFromDefaultJSONFiles()
-	//assert.Nil(t, cfErr)
+	// cf, cfErr := mqjms.CreateConnectionFactoryFromDefaultJSONFiles()
+	// assert.Nil(t, cfErr)
 
 	// Initialise the attributes of the CF in whatever way you like
 	cf := mqjms.ConnectionFactoryImpl{

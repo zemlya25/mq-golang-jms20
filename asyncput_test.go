@@ -15,9 +15,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ibm-messaging/mq-golang-jms20/jms20subset"
-	"github.com/ibm-messaging/mq-golang-jms20/mqjms"
 	"github.com/stretchr/testify/assert"
+	"github.com/zemlya25/mq-golang-jms20/jms20subset"
+	"github.com/zemlya25/mq-golang-jms20/mqjms"
 )
 
 /*
@@ -117,7 +117,7 @@ func TestAsyncPutComparison(t *testing.T) {
 	syncEndTime := currentTimeMillis()
 
 	syncSendTime := syncEndTime - syncStartTime
-	//fmt.Println("Took " + strconv.FormatInt(syncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " synchronous messages.")
+	// fmt.Println("Took " + strconv.FormatInt(syncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " synchronous messages.")
 
 	// Receive the messages back again to tidy the queue back to a clean state
 	finishedReceiving := false
@@ -152,7 +152,7 @@ func TestAsyncPutComparison(t *testing.T) {
 	asyncEndTime := currentTimeMillis()
 
 	asyncSendTime := asyncEndTime - asyncStartTime
-	//fmt.Println("Took " + strconv.FormatInt(asyncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " ASYNC messages.")
+	// fmt.Println("Took " + strconv.FormatInt(asyncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " ASYNC messages.")
 
 	// Receive the messages back again to tidy the queue back to a clean state
 	finishedReceiving = false
@@ -463,7 +463,7 @@ func TestAsyncPutPersistentTransactedComparison(t *testing.T) {
 	syncEndTime := currentTimeMillis()
 
 	syncSendTime := syncEndTime - syncStartTime
-	//fmt.Println("Took " + strconv.FormatInt(syncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " transacted synchronous messages.")
+	// fmt.Println("Took " + strconv.FormatInt(syncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " transacted synchronous messages.")
 
 	// Receive the messages back again to tidy the queue back to a clean state
 	finishedReceiving := false
@@ -500,7 +500,7 @@ func TestAsyncPutPersistentTransactedComparison(t *testing.T) {
 	asyncEndTime := currentTimeMillis()
 
 	asyncSendTime := asyncEndTime - asyncStartTime
-	//fmt.Println("Took " + strconv.FormatInt(asyncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " transacted ASYNC messages.")
+	// fmt.Println("Took " + strconv.FormatInt(asyncSendTime, 10) + "ms to send " + strconv.Itoa(numberMessages) + " transacted ASYNC messages.")
 
 	// Receive the messages back again to tidy the queue back to a clean state
 	finishedReceiving = false
