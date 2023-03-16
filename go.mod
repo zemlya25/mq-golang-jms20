@@ -1,4 +1,4 @@
-module github.com/ibm-messaging/mq-golang-jms20
+module github.com/zemlya25/mq-golang-jms20
 
 go 1.13
 
